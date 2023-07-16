@@ -1,18 +1,21 @@
-import React from 'react';
-import Navbar from './Navbar/Navbar';
-import Hero from './Hero/Hero';
-import Footer from './Footer/Footer';
-import Product from './Product/Product';
-import Team from './Team';
+import React, { Suspense } from 'react';
+import Loader from './Loader/Loader';
+const Navbar = React.lazy(() => import('./Navbar/Navbar'));
+const Hero = React.lazy(() => import('./Hero/Hero'));
+const Product = React.lazy(() => import('./Product/Product'));
+const Footer = React.lazy(() => import('./Footer/Footer'));
+const Team = React.lazy(() => import('./Team'));
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Product />
-      <Team />
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Navbar />
+        <Hero />
+        <Product />
+        <Team />
+        <Footer />
+      </Suspense>
     </>
   );
 }
