@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Element } from 'react-scroll';
 import Loader from './Loader/Loader';
 import './style.css';
+
 const Navbar = React.lazy(() => import('./Navbar/Navbar'));
 const Hero = React.lazy(() => import('./Hero/Hero'));
 const Product = React.lazy(() => import('./Product/Product'));
