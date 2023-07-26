@@ -120,7 +120,7 @@ export default function Simple() {
 
         {isOpen ? (
           <Box pb={4} display={{ lg: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+            <Stack as={'nav'} spacing={4} align={'center'}>
               <NavLink />
             </Stack>
           </Box>
