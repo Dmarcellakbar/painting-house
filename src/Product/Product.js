@@ -1,24 +1,27 @@
 import {
   Box,
-  Button,
   Container,
   Flex,
   Heading,
-  Icon,
   Stack,
   Text,
-  useColorModeValue,
   Image,
+  SimpleGrid,
 } from '@chakra-ui/react';
-import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from 'react-icons/fc';
+import '../bgstyle.css';
+import cardData from './dataproduct.json';
 
-const Card = ({ heading, description, image, href }) => {
+const CardList = () => {
+  return (
+    <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
+      {cardData.map((card, index) => (
+        <Card key={index} {...card} />
+      ))}
+    </SimpleGrid>
+  );
+};
+
+const Card = ({ heading, description, imageURL }) => {
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -27,23 +30,20 @@ const Card = ({ heading, description, image, href }) => {
       borderRadius="lg"
       overflow="hidden"
       p={5}
-      bgColor={'transparent'}
+      bgColor={'white'}
       shadow={'dark-lg'}
       textAlign={'center'}
     >
       <Stack align={'center'} spacing={2}>
         <Flex w={230} h={150}>
-          {image}
+          <Image src={imageURL} w={'100%'} h={'100%'} alt={heading} />
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'}>
+          <Text mt={1} fontSize={'sm'} fontWeight={'bold'}>
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-          Learn more
-        </Button>
       </Stack>
     </Box>
   );
@@ -51,13 +51,13 @@ const Card = ({ heading, description, image, href }) => {
 
 export default function gridListWith() {
   return (
-    <Box pt={'5rem'} id="Product">
+    <Box py={'5rem'} id="Product" className="bg-layanan">
       <Stack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-          Produk dan Layanan
+          Produk Kami
         </Heading>
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Berikut ini beberapa aktivitas yang sudah dilakukan Painting House
+          Berikut ini beberapa produk dari Painting House
         </Text>
       </Stack>
 
@@ -68,60 +68,7 @@ export default function gridListWith() {
           justify="center"
           px={{ base: '2rem', md: 0 }}
         >
-          <Card
-            heading={'Pelatihan melukis diatas kanvas'}
-            image={<Image src="1.png" w={'100%'} h={'100%'} />}
-            description={'Pelatihan melukis diatas kanvas'}
-            href={'#'}
-          />
-          <Card
-            heading={'Pelatihan melukis tekstil'}
-            image={<Image src="2.png" w={'100%'} h={'100%'} />}
-            description={'Pelatihan melukis tekstil'}
-            href={'#'}
-          />
-          <Card
-            heading={'Pelatihan Melukis daun kering'}
-            image={<Image src="3.png" w={'100%'} h={'100%'} />}
-            description={'Pelatihan Melukis daun kering'}
-            href={'#'}
-          />
-          <Card
-            heading={'Pelatihan Eco Printing'}
-            image={<Image src="4.png" w={'100%'} h={'100%'} />}
-            description={'Pelatihan Eco Printing'}
-            href={'#'}
-          />
-          <Card
-            heading={'Produk eco Printing'}
-            image={<Image src="5.png" w={'100%'} h={'100%'} />}
-            description={'Produk eco Printing'}
-            href={'#'}
-          />
-          <Card
-            heading={'Produk Lukisan tekstil'}
-            image={<Image src="6.png" w={'100%'} h={'100%'} />}
-            description={'Produk eco Printing'}
-            href={'#'}
-          />
-          <Card
-            heading={'Produk Lukisan dari pelepah pisang'}
-            image={<Image src="7.png" w={'100%'} h={'100%'} />}
-            description={'Produk eco Printing'}
-            href={'#'}
-          />
-          <Card
-            heading={'Produk Lukisan daun kering'}
-            image={<Image src="8.png" w={'100%'} h={'100%'} />}
-            description={'Produk eco Printing'}
-            href={'#'}
-          />
-          <Card
-            heading={'Produk lukisan diatas kanvas'}
-            image={<Image src="9.png" w={'100%'} h={'100%'} />}
-            description={'Produk eco Printing'}
-            href={'#'}
-          />
+          <CardList />
         </Flex>
       </Container>
     </Box>

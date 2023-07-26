@@ -1,28 +1,18 @@
 import {
   Box,
-  Button,
   Container,
   Flex,
   Heading,
-  Icon,
   Stack,
   Text,
   Image,
-  useColorModeValue,
 } from '@chakra-ui/react';
-import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from 'react-icons/fc';
 
 import './team.css';
 
 export default function gridListWith() {
   return (
-    <Box pt={'5rem'} id="Team">
+    <Box id="Team" className="bg-profile" py={'8rem'}>
       <Stack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Team Painting House
@@ -40,15 +30,15 @@ export default function gridListWith() {
             rounded={'lg'}
             pos={'relative'}
             zIndex={1}
-            bgColor={'transparent'}
+            bgColor={'white'}
             shadow={'dark-lg'}
           >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <Image src="avatar2.png" alt="Avatar" w={'100%'} h={'100%'} />
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Heading size="lg" fontSize="25px" mb={'1rem'}>
                     Muhammad Rafli Ragil Adi Putra
                   </Heading>
@@ -74,15 +64,15 @@ export default function gridListWith() {
             rounded={'lg'}
             pos={'relative'}
             zIndex={1}
-            bgColor={'transparent'}
+            bgColor={'white'}
             shadow={'dark-lg'}
           >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <Image src="avatar.png" alt="Avatar" w={'100%'} h={'100%'} />
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Heading size="lg" fontSize="25px" mb={'1rem'}>
                     Ikhdazahrotunni Saaul Mufidah
                   </Heading>
@@ -111,15 +101,15 @@ export default function gridListWith() {
             rounded={'lg'}
             pos={'relative'}
             zIndex={1}
-            bgColor={'transparent'}
+            bgColor={'white'}
             shadow={'dark-lg'}
           >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <Image src="avatar.png" alt="Avatar" w={'100%'} h={'100%'} />
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Heading size="lg" fontSize="25px" mb={'1rem'}>
                     Sinta Krismaya
                   </Heading>
@@ -148,15 +138,15 @@ export default function gridListWith() {
             rounded={'lg'}
             pos={'relative'}
             zIndex={1}
-            bgColor={'transparent'}
+            bgColor={'white'}
             shadow={'dark-lg'}
           >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <Image src="avatar.png" alt="Avatar" w={'100%'} h={'100%'} />
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Heading size="lg" fontSize="25px" mb={'1rem'}>
                     Aprilisfiya Handayani
                   </Heading>
@@ -185,15 +175,15 @@ export default function gridListWith() {
             rounded={'lg'}
             pos={'relative'}
             zIndex={1}
-            bgColor={'transparent'}
+            bgColor={'white'}
             shadow={'dark-lg'}
           >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <Image src="avatar.png" alt="Avatar" w={'100%'} h={'100%'} />
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Heading size="lg" fontSize="25px" mb={'1rem'}>
                     Caterina Aruli Iskandar
                   </Heading>
