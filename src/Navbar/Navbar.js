@@ -3,7 +3,6 @@ import {
   Flex,
   HStack,
   IconButton,
-  Button,
   useDisclosure,
   Stack,
 } from '@chakra-ui/react';
@@ -17,45 +16,45 @@ const NavLink = props => {
   return (
     <>
       <Link to="section1" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Home</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section2" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Profile</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section3" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Layanan</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section4" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Product</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section5" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Testimonial</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section6" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Team</b>
-        </Button>
+        </button>
       </Link>
 
       <Link to="section7" smooth={'true'}>
-        <Button className="glow-on-hover">
+        <button className="glow-on-hover">
           <b>Contact</b>
-        </Button>
+        </button>
       </Link>
     </>
   );

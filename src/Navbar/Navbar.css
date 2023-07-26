@@ -40,7 +40,7 @@
 }
 
 .glow-on-hover:active {
-  color: #000;
+  color: #fff;
 }
 
 .glow-on-hover:active:after {
