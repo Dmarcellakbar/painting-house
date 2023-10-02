@@ -15,11 +15,11 @@ import Name from './Name';
 const NavLink = props => {
   return (
     <>
-      <Link to="section1" smooth={'true'}>
+      <a href="/">
         <button className="glow-on-hover">
           <b>Home</b>
         </button>
-      </Link>
+      </a>
 
       <Link to="section2" smooth={'true'}>
         <button className="glow-on-hover">
@@ -29,29 +29,35 @@ const NavLink = props => {
 
       <Link to="section3" smooth={'true'}>
         <button className="glow-on-hover">
-          <b>Layanan</b>
+          <b>Berita</b>
         </button>
       </Link>
 
       <Link to="section4" smooth={'true'}>
         <button className="glow-on-hover">
-          <b>Product</b>
+          <b>Layanan</b>
         </button>
       </Link>
 
       <Link to="section5" smooth={'true'}>
         <button className="glow-on-hover">
-          <b>Testimonial</b>
+          <b>Product</b>
         </button>
       </Link>
 
       <Link to="section6" smooth={'true'}>
         <button className="glow-on-hover">
-          <b>Team</b>
+          <b>Testimonial</b>
         </button>
       </Link>
 
       <Link to="section7" smooth={'true'}>
+        <button className="glow-on-hover">
+          <b>Team</b>
+        </button>
+      </Link>
+
+      <Link to="section8" smooth={'true'}>
         <button className="glow-on-hover">
           <b>Contact</b>
         </button>

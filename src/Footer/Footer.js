@@ -88,18 +88,21 @@ export default function LargeWithNewsletter() {
               <button>Profile</button>
             </Link>
             <Link to="section3" smooth={'true'}>
-              <button>Layanan</button>
+              <button>Berita</button>
             </Link>
             <Link to="section4" smooth={'true'}>
-              <button>Product</button>
+              <button>Layanan</button>
             </Link>
             <Link to="section5" smooth={'true'}>
-              <button>Team</button>
+              <button>Product</button>
             </Link>
             <Link to="section6" smooth={'true'}>
-              <button>Testimonials</button>
+              <button>Team</button>
             </Link>
             <Link to="section7" smooth={'true'}>
+              <button>Testimonials</button>
+            </Link>
+            <Link to="section8" smooth={'true'}>
               <button>Contact</button>
             </Link>
           </Stack>

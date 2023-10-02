@@ -8,6 +8,7 @@ const Hero = React.lazy(() => import('./Hero/Hero'));
 const Product = React.lazy(() => import('./Product/Product'));
 const Footer = React.lazy(() => import('./Footer/Footer'));
 const Team = React.lazy(() => import('./Team'));
+const Berita = React.lazy(() => import('./Berita'));
 const Layanan = React.lazy(() => import('./Layanan/Layanan'));
 const Profile = React.lazy(() => import('./Profile'));
 const Testimonial = React.lazy(() => import('./Testimonial'));
@@ -26,18 +27,21 @@ function App() {
             <Profile />
           </Element>
           <Element className="element" name="section3">
-            <Layanan />
+            <Berita />
           </Element>
           <Element className="element" name="section4">
-            <Product />
+            <Layanan />
           </Element>
           <Element className="element" name="section5">
-            <Testimonial />
+            <Product />
           </Element>
           <Element className="element" name="section6">
-            <Team />
+            <Testimonial />
           </Element>
           <Element className="element" name="section7">
+            <Team />
+          </Element>
+          <Element className="element" name="section8">
             <Contact />
           </Element>
           <Footer />
