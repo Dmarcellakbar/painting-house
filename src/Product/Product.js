@@ -35,7 +35,7 @@ const Card = ({ heading, description, imageURL }) => {
       textAlign={'center'}
     >
       <Stack align={'center'} spacing={2}>
-        <Flex w={230} h={150}>
+        <Flex w={230} h={170}>
           <Image src={imageURL} w={'100%'} h={'100%'} alt={heading} />
         </Flex>
         <Box mt={2}>
